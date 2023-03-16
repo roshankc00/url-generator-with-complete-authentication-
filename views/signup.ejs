@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page </title>
+</head>
+<style>
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        background-color: blanchedalmond;
+        position: relative;
+        left: 20%;
+        padding: 20px;
+    }
+    input{
+        padding: 20px;
+        width: 25vw;
+        font-size: 20px;
+        border-radius: 10px;
+        margin: 10px;
+        
+
+    }
+    label{
+        font-size: 20px;
+    }
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        background-color: black;
+        color: antiquewhite;
+        font-size: 15px;
+
+
+        }
+</style>
+<body>
+    <form method="POST" action="/user">
+        <h1>Sign up </h1>
+        <div>
+            
+            <label> Name </label>
+            <input type="text" name="name" placeholder="enter the full name "> 
+        </div>
+        <div>
+            
+            <label>Email </label>
+            <input type="email" name="email" placeholder="enter the email "> 
+        </div>
+        <div>
+            
+            <label> Password </label>
+            <input type="password" name="password" placeholder="Password "> 
+        </div>
+        <button type="submit"> submit </button>
+    </form>
+    
+</body>
+</html>
